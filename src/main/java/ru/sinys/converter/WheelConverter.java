@@ -5,7 +5,7 @@ import org.mapstruct.factory.Mappers;
 import ru.sinys.dto.WheelDTO;
 import ru.sinys.entity.Wheel;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface WheelConverter {
     WheelConverter INSTANCE = Mappers.getMapper(WheelConverter.class);
 

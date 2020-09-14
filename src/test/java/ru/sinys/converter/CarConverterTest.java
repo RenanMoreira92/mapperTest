@@ -7,6 +7,7 @@ import ru.sinys.entity.Car;
 import ru.sinys.entity.Wheel;
 
 import java.util.Arrays;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -17,6 +18,7 @@ public class CarConverterTest {
         Car car = new Car(23, "Oka");
         car.setActive(true);
         car.setWheels(Arrays.asList(new Wheel(10, "first"), new Wheel(10, "second")));
+
         CarDTO dto = CarConverter.INSTANCE.entityToDto(car);
 
         assertThat(dto.getId()).isEqualTo(23);
@@ -40,4 +42,5 @@ public class CarConverterTest {
         assertThat(car.getModel()).isEqualTo("Kamaz");
         assertThat(car.getActive()).isEqualTo(true);
     }
+
 }

@@ -7,6 +7,7 @@ public class Car {
     private String model;
     private Boolean isActive;
     private List<Wheel> wheels;
+    private Engine engine;
 //    private Engine engine;
 
 
@@ -48,5 +49,13 @@ public class Car {
 
     public void setWheels(List<Wheel> wheels) {
         this.wheels = wheels;
+    }
+
+    public Engine getEngine() {
+        return engine;
+    }
+
+    public void setEngine(Engine engine) {
+        this.engine = engine;
     }
 }

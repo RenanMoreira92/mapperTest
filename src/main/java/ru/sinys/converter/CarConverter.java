@@ -6,7 +6,7 @@ import org.mapstruct.factory.Mappers;
 import ru.sinys.dto.CarDTO;
 import ru.sinys.entity.Car;
 
-@Mapper
+@Mapper(uses = {EngineConverter.class, WheelConverter.class},  componentModel = "spring")
 public interface CarConverter {
     CarConverter INSTANCE = Mappers.getMapper( CarConverter.class );
 

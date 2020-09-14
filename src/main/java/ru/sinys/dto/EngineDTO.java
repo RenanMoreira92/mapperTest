@@ -1,12 +1,12 @@
-package ru.sinys.entity;
+package ru.sinys.dto;
 
-public class Engine {
+public class EngineDTO {
     private String power;
 
-    public Engine() {
+    public EngineDTO() {
     }
 
-    public Engine(String power) {
+    public EngineDTO(String power) {
         this.power = power;
     }
 

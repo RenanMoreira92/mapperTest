@@ -9,6 +9,7 @@ public class CarDTO {
     private String modelName;
     private Boolean isActive;
     private List<WheelDTO> wheels;
+    private EngineDTO engine;
 
     public long getId() {
         return id;
@@ -40,5 +41,13 @@ public class CarDTO {
 
     public void setWheels(List<WheelDTO> wheels) {
         this.wheels = wheels;
+    }
+
+    public EngineDTO getEngine() {
+        return engine;
+    }
+
+    public void setEngine(EngineDTO engine) {
+        this.engine = engine;
     }
 }
